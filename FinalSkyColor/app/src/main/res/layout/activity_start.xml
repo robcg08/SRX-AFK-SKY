@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".StartActivity"
+    android:background="@drawable/start">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackgroundStart"
+        android:src="@drawable/name2"
+        android:layout_above="@+id/BtnStartLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnStartLogin"
+        android:background="@drawable/signin"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnStartRegistration"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/registro"
+        android:layout_below="@+id/BtnStartLogin"
+        android:layout_alignLeft="@+id/BtnStartLogin"
+        android:layout_alignStart="@+id/BtnStartLogin" />
+</RelativeLayout>
